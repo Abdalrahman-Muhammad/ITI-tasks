@@ -1,0 +1,41 @@
+form {
+  width: 50%;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+#successSubmit {
+  display: none;
+}
+
+.error-message {
+  display: none;
+}
+
+.show {
+  display: block;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+
+.input-row {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notFinised {
+  display: none;
+  margin: 20px;
+}
+
+/* .finished {
+  display: block;
+} */

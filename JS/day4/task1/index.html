@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <tr>
+        <td>Input</td>
+        <td>
+          <label for="in-put" id="label-1">
+            <div id="labelName">Number</div>
+            <input type="number" id="in-put" oninput="changeColor()">
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>Output</td>
+        <td>
+          <div id="circles">
+            <div>
+              <p id="p1" class="notActive"></p>
+              <p id="go" class="">go</p>
+            </div>
+            <div>
+              <p id="p2" class="notActive"></p>
+              <p id="steady" class="">steady</p>
+            </div>
+            <div>
+              <p id="p3" class="notActive"></p>
+              <p id="stopp" class="">stop</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <!-- <td colspan="2"><button class="btn" onclick="changeColor()">Change Color</button></td> -->
+      </tr>
+    </table>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

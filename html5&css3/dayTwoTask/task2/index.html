@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" onsubmit="handleStorage()">
+    <h1>Change Email Address</h1>
+    <input type="text" required placeholder="Username">
+    <br><br>
+    <input type="email" placeholder="Email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    <div id="re">
+      <label for="check">Remember Me</label>
+      <input type="checkbox" id="check">
+    </div>
+  </form>
+  <script src="./storage.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

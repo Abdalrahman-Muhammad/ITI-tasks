@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" id="myForm">
+    <div id="container">
+      <div class="inputs">
+        <div class="together">
+          <label for="" on>Name</label>
+          <input type="text" name="userName" id="inputText">
+          <p class="errorMessage"></p>
+        </div>
+        <div class="together">
+          <label for="">E-mail</label>
+          <input type="email">
+          <p class="errorMessage"></p>
+        </div>
+        <div class="together">
+          <label for="">Password</label>
+          <input type="password">
+          <p class="errorMessage"></p>
+        </div>
+      </div>
+      <div class="together">
+        <label for="">Gender</label>
+        <div class="gender">
+          <input type="radio" name="gender">
+          <label for="">male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender">
+          <label for="">female</label>
+        </div>
+        <p class="errorMessage" id="forRaios"></p>
+      </div>
+      <div class="together">
+        <label for="">sports</label>
+        <div class="sports">
+          <input type="checkbox" name="sports">
+          <label for="">Tennes</label>
+        </div>
+        <div class="sports">
+          <input type="checkbox" name="sports">
+          <label for="">Running</label>
+        </div>
+        <div class="sports">
+          <input type="checkbox" name="sports">
+          <label for="">Football</label>
+        </div>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="together">
+        <label for="">country</label>
+        <input list="country">
+        <datalist id="country">
+          <option value="Egypt">
+          <option value="russia">
+          <option value="morroco">
+        </datalist>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="together">
+        <button type="submit" id="btn">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </div>
+  </form>
+  <script src="./main.js"></script>
+</body>
+
+</html>

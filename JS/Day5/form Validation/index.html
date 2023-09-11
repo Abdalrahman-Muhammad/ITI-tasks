@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" onsubmit="handleSubmit(event)">
+    <div id="successSubmit">Form Successfully Submitted</div>
+    <div class="input-row">
+      <label for="userName">User Name</label>
+      <input type="text" id="userName" name="name" oninput="handleInput()">
+      <div id="error-name" class="error-message">Name must be 3 characters at least</div>
+    </div>
+    <div class="input-row">
+      <label for="userEmail">Email</label>
+      <input type="email" id="userEmail" name="mail" oninput="handleInput()">
+      <div id="error-mail" class="error-message">enter email like : test.gmail.com</div>
+    </div>
+    <div class="input-row">
+      <label for="userPassword">Password</label>
+      <input type="password" id="userPassword" name="password" oninput="handleInput()">
+      <div id="error-pass" class="error-message">Password Must be 8 characters at least</div>
+    </div>
+
+    <div class="input-row">
+      <label for="">Gender</label>
+      <div>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female" name="gender">female</label>
+      </div>
+      <div id="error-radio" class="error-message">Please choose your gender</div>
+    </div>
+    <div class="input-row">
+      <label for="">Sports</label>
+      <div>
+        <input type="checkbox" value="tennis" name="sport" id="tennis">
+        <label for="tennis">tennis</label>
+        <input type="checkbox" name="sport" id="running" value="running">
+        <label for="running">running</label>
+        <input type="checkbox" name="sport" id="football" value="football">
+        <label for="football">football</label>
+        <div id="error-checkbox" class="error-message">please select two at least</div>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <label for="li">Country</label>
+      <input list="country" id="li" name="list">
+      <datalist id="country">
+        <option value="egypt">Egypt</option>
+        <option value="lebnan">Lebnan</option>
+        <option value="iraq">Iraq</option>
+      </datalist>
+      <div id="errorList" class="error-message">Please Select your Country</div>
+    </div>
+
+    <div id="su" class="notFinised">Congrats ur Data has Been submitted</div>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset" onclick="handleReset()">Reset</button>
+    </div>
+  </form>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

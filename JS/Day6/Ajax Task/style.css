@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: slateblue;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 150px;
+  margin: 10px 10px;
+
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+ul {
+  list-style-position: inside;
+}

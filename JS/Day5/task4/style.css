@@ -1,0 +1,28 @@
+.btn {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#btn1 {
+  background-color: green;
+}
+
+#btn2 {
+  background-color: red;
+}
+
+.button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+.mydiv {
+  width: 70%;
+  height: 300px;
+  background-color: #eee;
+  margin: 10px auto;
+}

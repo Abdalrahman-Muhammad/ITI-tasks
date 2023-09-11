@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Simple Markers</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <style>
+        /* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+        #map {
+            height: 100%;
+        }
+
+        /* 
+ * Optional: Makes the sample page fill the window. 
+ */
+        html,
+        body {
+             height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script>
+        navigator.geolocation.getCurrentPosition(function(pos){
+            console.log(pos.coords.latitude);
+            console.log(pos.coords.longitude);
+            initMap(pos.coords.latitude,pos.coords.latitude);
+
+        },function error(){
+            alert("try again");
+        })
+        function initMap(x,y) {
+            const myLatLng = { lat: x, lng: y };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: myLatLng,
+            });
+
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Hello World!",
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"
+        defer></script>
+</body>
+
+</html>

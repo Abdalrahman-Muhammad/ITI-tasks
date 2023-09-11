@@ -1,0 +1,13 @@
+body {
+  background-color: #eee;
+  font-size: 30px;
+}
+
+span {
+  color: black;
+}
+
+p {
+  color: red;
+  font-weight: 900;
+}

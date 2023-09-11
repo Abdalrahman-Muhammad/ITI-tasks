@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/8912_background_1984x900.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+  color: #1D5B79;
+}
+
+h1 {
+  color: #F3AA60;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #EF6262;
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, .7);
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px 30px;
+  border: 2px black solid;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px #1D5B79;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+dl {
+  padding: 10px;
+}
+
+dd {
+  text-align: center;
+  margin: 10px;
+  border: #EF6262 solid 1px;
+}
+
+dt {
+  text-align: left;
+
+  margin: 10px;
+}
+
+dd:hover {
+  background-color: #1D5B79;
+  color: white;
+}
+
+.h {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px #1D5B79;
+}
+
+h3,
+h4 {
+  justify-content: center;
+  text-align: center;
+
+}
+
+img {
+  margin-left: 279px;
+  border-radius: 40px;
+}
+
+.game {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px #1D5B79;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  background-color: white;
+  border: solid 5px black;
+}
+
+td {
+  text-align: center;
+  background-color: #F3AA60;
+
+}
+
+#pa {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  padding-bottom: 50px;
+}
+
+a:hover {
+  color: #EF6262;
+}

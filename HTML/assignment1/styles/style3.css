@@ -1,0 +1,36 @@
+body {
+  background-color: #6666;
+}
+
+
+
+table {
+  background-color: rgb(247, 203, 195);
+  border: solid black 3px;
+}
+
+input {
+  border: 2px solid;
+  border-radius: 4px;
+  /* font-size: 1rem; */
+  /* margin: 0.25rem; */
+  min-width: 100px;
+  padding: 0.5rem;
+  transition: background-color 0.5s ease-out;
+}
+
+input:optional {
+  border-color: gray;
+}
+
+input:required {
+  border-color: black;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: yellow;
+}

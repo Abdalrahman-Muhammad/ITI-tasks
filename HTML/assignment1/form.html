@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <title>Info</title>
+</head>
+
+<body>
+  <h1>Fill out your info</h1>
+  <div class="container">
+    <form action="./image.html" method="post" target="" novalidate>
+
+      <div class="flex">
+        <label for="myfName">First Name</label>
+        <input type="text" name="fName" id="myfName" placeholder="First Name" required autofocus>
+      </div>
+      <div class="flex">
+        <label for="mylName">Last Name</label>
+        <input type="text" name="lName" id="mylName" required placeholder="Last Name">
+      </div>
+      <div class="flex">
+        <label for="eMail">Email </label>
+        <input type="email" name="e-mail" id="eMail" required placeholder="e-mail">
+      </div>
+      <div class="flex s_one">
+        <label for="gender">Gender</label>
+        <div class="gender">
+          <div class="ra">
+            <input type="radio" name="gender" id="M" value="male" checked> <label for="M" class="labell">Male</label>
+          </div>
+          <div class="ra">
+            <input type="radio" name="gender" id="F" value="female"> <label for="F" class="labell">Female</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex s_one">
+        <label for="flavor">Flavor</label>
+        <div class="flavor">
+          <div class="o"> <input type="checkbox" name="flavor" id="P" checked> <label for="P"
+              class="labell">pepperoni</label>
+          </div>
+          <div class="o"><input type="checkbox" name="flavor" id="C"> <label for="C" class="labell">Cheese
+              Lovers</label>
+          </div>
+          <div class="o"><input type="checkbox" name="flavor" id="B" checked> <label for="B"
+              class="labell">Bakon</label></div>
+        </div>
+      </div>
+
+
+      <div class="flex">
+        <label for="comment">Comments</label>
+        <textarea name="comnts" id="comment" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="flex">
+        <input type="submit" value="submit" id="bt">
+      </div>
+
+      <!-- trying things down here -->
+
+
+    </form>
+  </div>
+</body>
+
+</html>

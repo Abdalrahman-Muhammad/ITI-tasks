@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/vegetables-set-left-black-slate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ysabeau SC';
+  font-size: 20px;
+}
+
+.header {
+  color: white;
+  font-size: 30px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.486);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#special1 {
+  margin-top: 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header2 {
+  /* background-color: aqua; */
+  color: white;
+  /* align-self: center; */
+}
+
+.para {
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 5rem;
+  padding: 3rem;
+  text-align: justify;
+
+}
+
+.para2 {
+  text-align: justify;
+}
+
+.special2 {
+  margin-top: 7rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 7rem;
+  padding: 3rem;
+
+}
+
+img {
+  float: right;
+  border-radius: 7rem;
+  max-width: 100%;
+
+}
+
+#frame {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+iframe {
+  border: solid 15px transparent;
+  border-radius: 7rem;
+  width: 60%;
+  height: 30rem;
+  margin: 3rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+
+
+
+ul {
+  color: white;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.486);
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  list-style-position: outside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}

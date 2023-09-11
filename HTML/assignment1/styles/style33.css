@@ -1,0 +1,102 @@
+body {
+  background-image: url(../images/form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 20px;
+}
+
+form {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 80px;
+
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  min-width: fit-content;
+  width: 5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  padding: .5rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+/* input {
+  width: 100%;
+} */
+
+.flavor {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.o {
+  align-content: center;
+  flex-basis: content;
+}
+
+.gender {
+  margin-left: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ra {
+  align-content: center;
+  flex-basis: content;
+}
+
+/* #M,
+#F {
+  margin: 0;
+} */
+
+/* .labell {
+  flex-basis: 100px;
+} */
+
+#P,
+#C,
+#B {
+  flex-basis: 10px;
+}
+
+#bt {
+  width: 50%;
+  justify-content: center;
+  align-self: center;
+  border-radius: 3rem;
+}
+
+#bt:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+#myfName,
+#mylName,
+#eMail {
+  border: none;
+  border-bottom: solid 1px #666;
+}

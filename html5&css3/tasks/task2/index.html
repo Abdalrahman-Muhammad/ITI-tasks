@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <label for="red">Red</label>
+    <input type="range" id="red" min="0" max="255" oninput="changeColor()" value="0">
+    <br>
+    <br>
+    <label for="green">Green</label>
+    <input type="range" id="green" min="0" max="255" oninput="changeColor()" value="0">
+    <br>
+    <br>
+    <label for="blue">Blue</label>
+    <input type="range" id="blue" min="0" max="255" oninput="changeColor()" value="0">
+    <br><br>
+    <div id="text">change the 3 color ranges above and observe my color change</div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

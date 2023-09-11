@@ -1,0 +1,29 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons>div {
+  font-size: 25px;
+  width: 250px;
+  height: 100px;
+  background-color: rgb(205, 233, 45);
+  color: black;
+  margin: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.userData {
+  background-color: azure;
+}
+
+.userData>div {
+  font-size: 20px;
+  margin: 30px auto;
+  background-color: #eee;
+  width: 80%;
+  text-align: center;
+}

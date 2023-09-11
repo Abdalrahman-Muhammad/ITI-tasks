@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="modernizr-custom (11).js"></script>
+</head>
+<body>
+    <form>
+
+       age: <input type="number" min="10" max="60"> 
+
+       <input type="range" min="10" max="60" value="10" oninput="printVal(this)" >
+       <span></span>
+       <br><br> 
+    email <input placeholder="enter your email" type="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required>       <br><br>
+    color<input type="color" id="mycolor"> <br><br>
+      url <input type="url"><br><br>
+       search<input type="search">
+       tel<input type="tel">
+
+        <input type="submit">
+    </form>
+    <button onclick="test()">test</button>
+    <!-- <header>
+        div1
+    </header> -->
+    <!-- <input type="date"> -->
+    <script>
+        var inp = document.querySelectorAll("input")[1];
+        var span = document.querySelector("span");
+        function printVal(r){
+            span.textContent = r.value;
+
+        }
+        function test(){
+
+           // console.log( inp.valueAsNumber+10);//"20"+10
+            //  inp.stepDown(3);
+            // console.log( document.getElementById("mycolor").value)
+            document.body.style.backgroundColor =   document.getElementById("mycolor").value;
+
+
+        }
+        // if(!Modernizr.inputtypes.date){
+
+        //     alert("please change your broswer");
+        // }
+    </script>
+    
+</body>
+</html>

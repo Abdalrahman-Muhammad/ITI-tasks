@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+#container {
+  background-color: #eee;
+  width: 40%;
+  position: absolute;
+  left: -500px;
+  top: 0;
+  height: 500px;
+
+}
+
+h2 {
+  text-align: center;
+  /* border-radius: 10px; */
+  background-color: black;
+  color: #eee;
+}
+
+/* .section {
+  background-color: #eee;
+  /* width: 40%; */
+ul {
+  display: none;
+  list-style: none;
+}

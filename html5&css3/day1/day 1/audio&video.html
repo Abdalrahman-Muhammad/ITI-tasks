@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio controls autoplay>
+        <source src="Super Mario Bros (NES) Music - Overworld Theme.ogg">
+        <source src="Super Mario Bros (NES) Music - Overworld Theme.mp3">
+    </audio>
+    <button onclick="playaud()">play</button>
+    <button onclick="pauseaud()">pause</button>
+    <button onclick="stopaud()">stop</button>
+    <button onclick="muteaud()">mute</button>
+    <button onclick="test()">test</button>
+    vol<input type="range" min="0" max="1" step="0.1" value="1" oninput="changeVol(event)">
+    time<input type="range" min="0" value="0" id="timeRang" oninput="changeTme()">
+
+    <script>
+
+        var aud = document.querySelector("audio");
+        var timeRang = document.getElementById("timeRang");
+        aud.addEventListener("timeupdate", function () {
+            timeRang.value = aud.currentTime;
+        })
+        window.addEventListener("load", function () {
+            timeRang.max = aud.duration;
+        })
+        function changeTme() {
+            aud.currentTime = timeRang.value;
+        }
+        function changeVol(vol) {
+            console.log(vol)
+            // console.log(this)
+            // aud.volume = vol.value;
+        }
+        function playaud() {
+            aud.play();
+        }
+        function pauseaud() {
+            aud.pause();
+        }
+        function stopaud() {
+            aud.load();
+            aud.pause();
+        }
+        function muteaud() {
+
+            aud.muted = !aud.muted;
+        }
+        function test() {
+            // console.log(aud.muted);//setter getter
+            // aud.muted = true;
+            // console.log(aud.volume);
+            // aud.volume = 0.5   
+            // aud.currentTime = 5;
+        }
+        document.body.style.backgroundColor = "rgb(50,60,100)"
+    </script>
+
+
+</body>
+
+</html>

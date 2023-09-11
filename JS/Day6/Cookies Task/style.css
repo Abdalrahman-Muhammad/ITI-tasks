@@ -1,0 +1,21 @@
+#input1,
+#input2 {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 15px;
+
+}
+
+#input1>input,
+#input2>input {
+  margin-left: 100px;
+}
+
+
+#colorSelect {
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+}

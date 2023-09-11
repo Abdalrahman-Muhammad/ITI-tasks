@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin-top: 200px;
+      text-align: center;
+      color: black;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#">
+    <label for="name">Enter name</label>
+    <input type="text" name="name" id="name" placeholder="name"><br><br>
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" id="email" placeholder="Example@gmail.com"><br><br>
+
+
+    <select id="BackColor" onchange="setThemeCookies()">
+      <option value="select Theme">select Theme</option>
+      <option value="#A7F098">Light green</option>
+      <option value="#385C9A">Blue</option>
+      <option value="#EB7338">Calm Orange</option>
+    </select>
+
+    <input type="button" value="Get Cookies" id="btn2">
+    <input type="button" value="Set Cookies" id="btn1">
+
+
+  </form>
+  <script src="./main.js"></script>
+</body>
+
+</html>

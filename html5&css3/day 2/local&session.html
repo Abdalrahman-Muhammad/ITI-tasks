@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- browser -->
+    <button onclick="saveD()">save data</button>
+    <button onclick="getD()">get data</button>
+    <button onclick="clearI()">clear item</button>
+    <button onclick="deletAll()">clear all</button>
+    <a href="index.html">page2</a>
+    <script>
+        // name/key value
+        function saveD(){
+
+            //  localStorage.setItem("userName","menna");
+            //  localStorage.score = 2000;
+            sessionStorage.setItem("email","aaaadsa");
+        }
+        function getD(){
+
+            // alert(localStorage.getItem("userName"));//return null
+            // console.log(localStorage["score"]);//return undefiend
+            alert(sessionStorage.getItem("email"));
+        }
+        function clearI(){
+            // localStorage.removeItem("score");
+            sessionStorage.removeItem("email");
+        }
+        function deletAll(){
+            // localStorage.clear();
+            sessionStorage.clear();
+        }
+    </script>
+</body>
+</html>
